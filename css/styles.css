@@ -95,10 +95,10 @@ h6 {
   font-weight: bold; }
 
 .enlace--transicion {
-  transition: color .3s ease; }
+  transition: color .3s ease !important; }
 
 .enlace--transicion:hover {
-  color: #dddddd; }
+  color: #dddddd !important; }
 
 li .enlace--menu {
   font-size: 1.5rem;

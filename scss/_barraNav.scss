@@ -20,11 +20,11 @@
 }
 
 .enlace--transicion{
-    transition: color .3s ease;
+    transition: color .3s ease !important;
 }
 
 .enlace--transicion:hover{
-    color: $blanco;
+    color: $blanco !important;
 }
 
 //Extend
