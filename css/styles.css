@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/* Global */
+html {
+  font-size: 62.5%;
+  /*  Para usar REMs / 1rem = 10px */ }
+
+body {
+  background: linear-gradient(90deg, rgba(196, 53, 126, 0.5) 0%, rgba(238, 145, 188, 0.5) 100%); }
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.1; }
+
+img {
+  width: 100%; }
+
+h1 {
+  font-size: 7rem; }
+
+h2 {
+  font-size: 3.5rem; }
+
+h3 {
+  font-size: 2.33333rem; }
+
+h4 {
+  font-size: 1.75rem; }
+
+h5 {
+  font-size: 1.4rem; }
+
+h6 {
+  font-size: 1.16667rem; }
+
+/* Fondo */
+.fondo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh; }
+
+/* Imagenes fondo */
+.fondo--inicio {
+  background-image: url(../img/fondos/portadamobile.webp); }
+  @media (min-width: 480px) {
+    .fondo--inicio {
+      background-image: url(../img/fondos/portada.webp); } }
+
+.fondo--bio {
+  background-image: url(../img/fondos/biomobile.webp); }
+  @media (min-width: 480px) {
+    .fondo--bio {
+      background-image: url(../img/fondos/bio.webp); } }
+
+.fondo--tecnica {
+  background-image: url(../img/fondos/tecnicamobile.webp); }
+  @media (min-width: 480px) {
+    .fondo--tecnica {
+      background-image: url(../img/fondos/tecnica.webp); } }
+
+.fondo--contacto {
+  background-image: url(../img/fondos/contactomobile.webp); }
+  @media (min-width: 480px) {
+    .fondo--contacto {
+      background-image: url(../img/fondos/contacto.webp); } }
+
+.grid {
+  display: grid;
+  grid-template-areas: "header" "main" "footer"; }
+
+.header {
+  grid-area: header; }
+
+.main {
+  grid-area: main;
+  height: 90vh; }
+
+.footer {
+  grid-area: footer;
+  height: 10vh; }
+
+/* Barra de navegacion */
+.navbar {
+  background: linear-gradient(90deg, rgba(196, 53, 126, 0.5) 0%, rgba(238, 145, 188, 0.5) 100%); }
+
+.navbar__logo {
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  color: #F8CF57 !important; }
+  .navbar__logo img {
+    margin-right: 2rem; }
+
+.enlace, li .enlace--menu {
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold; }
+
+.enlace--transicion {
+  transition: color .3s ease; }
+
+.enlace--transicion:hover {
+  color: #dddddd; }
+
+li .enlace--menu {
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  transition: color .3s;
+  color: #dddddd !important; }
+
+.enlace--menu:hover {
+  color: #F8CF57 !important; }
+
+/* Footer */
+.footer {
+  background: #c4357e;
+  background: linear-gradient(90deg, rgba(196, 53, 126, 0.5) 0%, rgba(238, 145, 188, 0.5) 100%); }
+  .footer__redes {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    @media (min-width: 768px) {
+      .footer__redes {
+        justify-content: flex-end;
+        align-items: center;
+        gap: 2rem; } }
+
+.footer__nombre {
+  display: inline;
+  font-family: "PT Sans", sans-serif;
+  color: #F8CF57;
+  font-size: 1.5rem;
+  margin: 0; }
+
+/* Index MBF */
+.titulo {
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  color: #C4357E;
+  border: 2px solid #C4357E;
+  border-radius: 10px;
+  background-color: rgba(248, 207, 87, 0.8);
+  padding: 1rem; }
+
+.main--tarjetas {
+  display: flex;
+  flex-direction: column; }
+
+.contenedor--tarjetas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 60%;
+  margin-top: 3rem; }
+  @media (min-width: 768px) {
+    .contenedor--tarjetas {
+      width: 60%;
+      align-self: flex-end; } }
+
+.tarjetas {
+  font-family: "Antic Slab", serif;
+  background-color: rgba(238, 145, 188, 0.5);
+  border: 2px solid #F8CF57;
+  border-radius: 10px;
+  padding: 1rem; }
+  .tarjetas p {
+    font-size: 1.5rem;
+    line-height: 1.2; }
+    @media (min-width: 768px) {
+      .tarjetas p {
+        font-size: 2rem; } }
+
+/* Bio MBF */
+@media (min-width: 480px) {
+  .tarjeta--bio {
+    width: 50%; } }
+
+/* Media MBF */
+@media (min-width: 768px) {
+  .carousel {
+    width: 70% !important; } }
+
+@media (min-width: 1024px) {
+  .carousel {
+    width: 50% !important; } }
+
+/* Técnica MBF */
+.tecnica {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
+.tecnica__tarjeta {
+  align-self: flex-start;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.tecnica__tarjeta:last-of-type {
+  align-self: flex-end;
+  margin-bottom: 2rem; }
+
+.tecnica__tarjeta--titulo {
+  font-size: 4rem;
+  color: #F8CF57;
+  font-weight: bold; }
+
+.contenedorTecnica {
+  text-align: center;
+  margin: 1rem; }
+
+.subsTecnica {
+  font-size: 2rem;
+  font-weight: 700; }
+
+.textoTecnica {
+  font-size: 1.4rem;
+  font-weight: normal; }
+
+/* Contacto MBF */
+.centro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.form {
+  width: 90%; }
+  .form label {
+    font-size: 2rem;
+    font-family: "PT Sans", sans-serif;
+    color: #F8CF57; }
+  .form textarea {
+    width: 100%;
+    background-color: rgba(238, 145, 188, 0.5);
+    border-radius: 5px;
+    border: 2px solid #F8CF57;
+    resize: none; }
+
+input {
+  background-color: rgba(238, 145, 188, 0.5);
+  border-radius: 5px;
+  border: 2px solid #F8CF57; }
+
+.boton {
+  background-color: #C4357E;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #dddddd;
+  padding: 1rem;
+  transition: color .3s ease; }
+
+.boton:hover {
+  color: #F8CF57; }
+
+.contacto {
+  display: flex;
+  text-align: center;
+  gap: 5rem;
+  margin-top: 2rem;
+  height: 70%;
+  width: 95%; }
+  @media (min-width: 480px) {
+    .contacto {
+      flex-direction: column; } }
+
+.contenedorContacto {
+  background-color: rgba(238, 145, 188, 0.5);
+  border-radius: 5px;
+  border: 2px solid #F8CF57;
+  padding: 0.5rem;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.textoContacto {
+  text-align: center;
+  color: #dddddd;
+  font-family: "Antic Slab", serif;
+  font-weight: bold;
+  font-size: 1.5rem; }
+  @media (min-width: 480px) {
+    .textoContacto {
+      font-size: 2rem; } }
+
+.logoCtc {
+  color: #F8CF57;
+  margin: 1rem; }
+
+@media (min-width: 480px) {
+  .form {
+    width: 70%; } }
+
+@media (min-width: 768px) {
+  .form, .contacto {
+    width: 50%; } }

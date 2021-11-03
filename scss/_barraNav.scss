@@ -1,0 +1,43 @@
+/* Barra de navegacion */
+
+.navbar{
+    background: linear-gradient(90deg, rgba(196,53,126,0.5) 0%, rgba(238,145,188,0.5) 100%);
+}
+
+.navbar__logo{
+    font-size: 1.8rem;
+    margin-left: 1rem;
+    color: $amarillo !important;
+
+    img{
+        margin-right: 2rem;
+    }
+}
+
+.enlace {
+    font-family: $fuenteHead;
+    font-weight: bold;
+}
+
+.enlace--transicion{
+    transition: color .3s ease;
+}
+
+.enlace--transicion:hover{
+    color: $blanco;
+}
+
+//Extend
+li{
+    .enlace--menu{
+        @extend .enlace;
+        font-size: 1.5rem;
+        margin-right: 2rem;
+        transition: color .3s;
+        color: $blanco !important;
+    }
+}
+
+.enlace--menu:hover{
+    color: $amarillo !important;
+}

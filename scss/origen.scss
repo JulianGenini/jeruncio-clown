@@ -1,0 +1,218 @@
+@import "globales";
+@import "fondos";
+@import "grid";
+@import "variables";
+@import "barraNav";
+@import "footer";
+
+
+/* Index MBF */
+
+.titulo{
+    font-family: $fuenteHead;
+    font-weight: bold;
+    color: $rosaosc;
+    border: 2px solid $rosaosc;
+    border-radius: 10px;
+    background-color: $amarillotransp;
+    padding: 1rem;
+}
+
+.main--tarjetas{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor--tarjetas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60%;
+    margin-top: 3rem;
+
+    @include media (md){
+        width: 60%;
+        align-self: flex-end;
+
+    }
+}
+
+.tarjetas{
+    font-family: $fuenteP;
+    background-color: $rosatransp;
+    border: 2px solid #F8CF57;
+    border-radius: 10px;
+    padding: 1rem;
+
+    p{
+        font-size: 1.5rem;
+        line-height: 1.2;
+        @include media (md){
+            font-size: 2rem;
+        }
+    }
+}
+
+/* Bio MBF */
+
+.tarjeta--bio{
+    @include media (sm){
+        width: 50%;
+    }
+}
+
+/* Media MBF */
+
+.carousel{
+    @include media (md){
+        width: 70% !important;
+    }
+
+    @include media (lg){
+        width: 50% !important;
+    }
+}
+
+/* Técnica MBF */
+
+.tecnica{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tecnica__tarjeta{ 
+    align-self: flex-start;  
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tecnica__tarjeta:last-of-type{
+    align-self: flex-end;
+    margin-bottom: 2rem;
+}
+
+.tecnica__tarjeta--titulo{
+    font-size: 4rem;
+    color: $amarillo;
+    font-weight: bold;
+}
+
+.contenedorTecnica{
+    text-align: center;
+    margin: 1rem;
+}
+
+.subsTecnica{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.textoTecnica{
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+
+/* Contacto MBF */
+
+.centro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.form{
+    width: 90%;
+    
+    label {   
+        font-size: 2rem;
+        font-family: $fuenteHead;
+        color: $amarillo;
+    }
+
+    textarea{
+        width: 100%;
+        background-color: $rosatransp;
+        border-radius: 5px;
+        border: 2px solid $amarillo;
+        resize: none;
+    }
+}
+
+input {
+    background-color: $rosatransp;
+    border-radius: 5px;
+    border: 2px solid $amarillo;
+
+}
+
+.boton {
+    background-color: $rosaosc;
+    font-family: $fuenteHead;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $blanco;
+    padding: 1rem;
+    transition: color .3s ease;
+}
+
+.boton:hover{
+    color: $amarillo;
+}
+
+
+
+.contacto {
+    display: flex;
+    text-align: center;
+    gap: 5rem;
+    margin-top: 2rem;
+    height: 70%;
+    width: 95%;
+
+    @include media (sm){
+        flex-direction: column;
+    }
+}
+
+.contenedorContacto{
+    background-color: rgba(238,145,188,0.5);
+    border-radius: 5px;
+    border: 2px solid $amarillo;
+    padding: 0.5rem;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textoContacto{
+    text-align: center;
+    color: $blanco;
+   font-family: $fuenteHead2;
+   font-weight: bold;
+   font-size: 1.5rem; 
+   @include media (sm){
+    font-size: 2rem;
+    }
+}
+
+.logoCtc{
+    color: $amarillo;
+    margin: 1rem;
+}
+
+.form{
+    @include media(sm){
+        width: 70%;
+    }
+}
+
+.form, .contacto{
+    @include media (md){
+        width: 50%;
+    }
+}
+

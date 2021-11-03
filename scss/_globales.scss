@@ -1,0 +1,43 @@
+/* Global */
+
+html {
+    font-size: 62.5%; /*  Para usar REMs / 1rem = 10px */ 
+    
+}
+body{
+    background: linear-gradient(90deg, rgba(196,53,126,0.5) 0%, rgba(238,145,188,0.5) 100%);
+}
+
+p{
+    font-size: 1.5rem;
+    line-height: 1.1;
+}
+
+img {
+    width: 100%;
+}
+
+// Media queries
+
+// Mapa
+$breakpoints: (
+    sm : 480px,
+    md : 768px,
+    lg : 1024px 
+);
+
+//Mixin
+
+@mixin media($breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+//Tamanio titulos
+
+@for $tamanioHead from 1 through 6 {
+    h#{$tamanioHead} {
+        font-size: 7rem/$tamanioHead;
+    }   
+}

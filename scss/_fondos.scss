@@ -1,0 +1,55 @@
+/* Fondo */
+
+.fondo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh; 
+}
+
+
+/* Imagenes fondo */
+
+// Fondo inicio
+
+.fondo--inicio{
+    background-image: url(../img/fondos/portadamobile.webp);
+
+
+    @include media(sm){
+        background-image: url(../img/fondos/portada.webp);
+    }
+}
+
+// Fondo bio
+
+.fondo--bio{
+    background-image: url(../img/fondos/biomobile.webp);
+
+
+    @include media(sm){
+        background-image: url(../img/fondos/bio.webp);
+    }
+}
+
+// Fondo tecnica
+
+.fondo--tecnica{
+    background-image: url(../img/fondos/tecnicamobile.webp);
+
+
+    @include media(sm){
+        background-image: url(../img/fondos/tecnica.webp);
+    }
+}
+
+// Fondo contacto
+
+.fondo--contacto{
+    background-image: url(../img/fondos/contactomobile.webp);
+
+
+    @include media(sm){
+        background-image: url(../img/fondos/contacto.webp);
+    }
+}
