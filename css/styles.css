@@ -64,21 +64,6 @@ h6 {
     .fondo--contacto {
       background-image: url(../img/fondos/contacto.webp); } }
 
-.grid {
-  display: grid;
-  grid-template-areas: "header" "main" "footer"; }
-
-.header {
-  grid-area: header; }
-
-.main {
-  grid-area: main;
-  height: 90vh; }
-
-.footer {
-  grid-area: footer;
-  height: 10vh; }
-
 /* Barra de navegacion */
 .navbar {
   background: linear-gradient(90deg, rgba(196, 53, 126, 0.5) 0%, rgba(238, 145, 188, 0.5) 100%); }
