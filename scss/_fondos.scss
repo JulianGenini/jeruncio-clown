@@ -4,9 +4,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
 }
-
 
 /* Imagenes fondo */
 
@@ -15,8 +15,7 @@
 .fondo--inicio{
     background-image: url(../img/fondos/portadamobile.webp);
 
-
-    @include media(sm){
+    @include media(md){
         background-image: url(../img/fondos/portada.webp);
     }
 }

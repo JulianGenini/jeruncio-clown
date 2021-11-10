@@ -2,15 +2,14 @@
 
 .navbar{
     background: linear-gradient(90deg, rgba(196,53,126,0.5) 0%, rgba(238,145,188,0.5) 100%);
-}
 
-.navbar__logo{
+&__logo{
     font-size: 1.8rem;
     margin-left: 1rem;
     color: $amarillo !important;
-
     img{
         margin-right: 2rem;
+        }
     }
 }
 

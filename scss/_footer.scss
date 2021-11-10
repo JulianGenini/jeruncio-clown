@@ -3,6 +3,7 @@
 .footer {
     background: rgb(196,53,126);
     background: linear-gradient(90deg, rgba(196,53,126,0.5) 0%, rgba(238,145,188,0.5) 100%);
+    min-width: 100vw;
 
 &__redes{
 
@@ -11,6 +12,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 
     @include media(md){
         justify-content: flex-end;
@@ -19,6 +21,16 @@
     }
 
 } }
+
+.footer__redes--hover{
+    transition: background-color border-radius .5s ease;
+}
+
+.footer__redes--hover:hover{
+    background-color: $rosatransp;
+    border-radius: 10px;
+}
+
 
 .footer__nombre{
     display: inline;
