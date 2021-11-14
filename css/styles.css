@@ -4,9 +4,6 @@ html {
   font-size: 62.5%;
   /*  Para usar REMs / 1rem = 10px */ }
 
-body {
-  background: linear-gradient(90deg, rgba(196, 53, 126, 0.5) 0%, rgba(238, 145, 188, 0.5) 100%); }
-
 p {
   font-size: 1.5rem;
   line-height: 1.1; }
@@ -14,6 +11,7 @@ p {
 img {
   width: 100%; }
 
+/* Media queries */
 h1 {
   font-size: 7rem; }
 
@@ -66,8 +64,11 @@ h6 {
       background-image: url(../img/fondos/contacto.webp); } }
 
 /* Barra de navegacion */
-.navbar {
+header {
   background: linear-gradient(90deg, rgba(196, 53, 126, 0.5) 0%, rgba(238, 145, 188, 0.5) 100%); }
+
+.navbar {
+  background: linear-gradient(90deg, rgba(196, 53, 126, 0.5) 0%, rgba(238, 145, 188, 0.5) 100%) !important; }
   .navbar__logo {
     font-size: 1.8rem;
     margin-left: 1rem;
@@ -96,7 +97,6 @@ li .enlace--menu {
 
 /* Footer */
 .footer {
-  background: #c4357e;
   background: linear-gradient(90deg, rgba(196, 53, 126, 0.5) 0%, rgba(238, 145, 188, 0.5) 100%);
   min-width: 100vw; }
   .footer__redes {
@@ -184,6 +184,36 @@ li .enlace--menu {
 @media (min-width: 480px) {
   .tarjeta--bio {
     width: 50%; } }
+
+.habilidades__contenedor {
+  border: 2px solid #F8CF57;
+  border-radius: 10px;
+  background-color: rgba(238, 145, 188, 0.5);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: background-color .3s ease; }
+
+.habilidades__contenedor:hover {
+  background-color: #C4357E; }
+
+@media (min-width: 1024px) {
+  .habilidades__contenedor--secundario {
+    display: flex;
+    justify-content: space-between; } }
+
+.habilidades__img {
+  max-width: 10rem; }
+  @media (min-width: 480px) {
+    .habilidades__img {
+      margin-right: 2rem; } }
+
+.habilidades__texto {
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #F8CF57; }
 
 /* Media MBF */
 @media (min-width: 768px) {

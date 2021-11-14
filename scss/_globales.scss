@@ -2,10 +2,6 @@
 
 html {
     font-size: 62.5%; /*  Para usar REMs / 1rem = 10px */ 
-    
-}
-body{
-    background: linear-gradient(90deg, rgba(196,53,126,0.5) 0%, rgba(238,145,188,0.5) 100%);
 }
 
 p{
@@ -17,7 +13,7 @@ img {
     width: 100%;
 }
 
-// Media queries
+/* Media queries */
 
 // Mapa
 $breakpoints: (
