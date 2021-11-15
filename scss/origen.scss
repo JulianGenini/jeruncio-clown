@@ -96,18 +96,15 @@
     background-color: $rosaosc;
 }
 
-.habilidades__contenedor--secundario{
-    @include media (lg){
-        display: flex;
-        justify-content: space-between;
-    }
-}
+// .habilidades__contenedor--secundario{
+//     @include media (lg){
+//         display: flex;
+//         justify-content: space-between;
+//     }
+// }
 
 .habilidades__img{
     max-width: 10rem;
-    @include media (sm){
-        margin-right: 2rem;
-    }
 }
 
 .habilidades__texto{

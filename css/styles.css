@@ -199,16 +199,8 @@ li .enlace--menu {
 .habilidades__contenedor:hover {
   background-color: #C4357E; }
 
-@media (min-width: 1024px) {
-  .habilidades__contenedor--secundario {
-    display: flex;
-    justify-content: space-between; } }
-
 .habilidades__img {
   max-width: 10rem; }
-  @media (min-width: 480px) {
-    .habilidades__img {
-      margin-right: 2rem; } }
 
 .habilidades__texto {
   font-family: "PT Sans", sans-serif;
