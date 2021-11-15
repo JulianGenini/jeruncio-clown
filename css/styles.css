@@ -157,17 +157,17 @@ li .enlace--menu {
       align-self: flex-end; } }
 
 .tarjetas {
-  font-family: "Antic Slab", serif;
   background-color: rgba(238, 145, 188, 0.5);
   border: 2px solid #F8CF57;
   border-radius: 10px;
   padding: 1rem; }
-  .tarjetas p {
-    font-size: 1.5rem;
-    line-height: 1.2; }
-    @media (min-width: 768px) {
-      .tarjetas p {
-        font-size: 2rem; } }
+
+.tarjetas--textindex {
+  font-size: 1.5rem;
+  line-height: 1.2; }
+  @media (min-width: 768px) {
+    .tarjetas--textindex {
+      font-size: 2rem; } }
 
 .main--funciones {
   display: flex;
@@ -264,6 +264,15 @@ li .enlace--menu {
 .textoTecnica {
   font-size: 1.4rem;
   font-weight: normal; }
+
+.alert {
+  border-radius: 10px;
+  margin: 0 1rem 1rem 1rem; }
+  .alert p {
+    font-family: "Antic Slab", serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #C4357E; }
 
 /* Contacto MBF */
 .centro {

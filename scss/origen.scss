@@ -1,6 +1,5 @@
 @import "globales";
 @import "fondos";
-//@import "grid";
 @import "variables";
 @import "barraNav";
 @import "footer";
@@ -45,18 +44,18 @@
 }
 
 .tarjetas{
-    font-family: $fuenteP;
     background-color: $rosatransp;
     border: 2px solid #F8CF57;
     border-radius: 10px;
     padding: 1rem;
+}
 
-    p{
-        font-size: 1.5rem;
-        line-height: 1.2;
-        @include media (md){
-            font-size: 2rem;
-        }
+.tarjetas--textindex{
+
+    font-size: 1.5rem;
+    line-height: 1.2;
+    @include media (md){
+        font-size: 2rem;
     }
 }
 
@@ -181,6 +180,18 @@
     font-weight: normal;
 }
 
+.alert{
+    border-radius: 10px;
+    margin: 0 1rem 1rem 1rem;
+
+    p{
+        font-family: $fuenteHead2;
+        font-weight: bold;
+        font-size: 2rem;
+        color: $rosaosc;
+    }
+}
+
 /* Contacto MBF */
 
 .centro {
@@ -227,8 +238,6 @@ input {
 .boton:hover{
     color: $amarillo;
 }
-
-
 
 .contacto {
     display: flex;
