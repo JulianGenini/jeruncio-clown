@@ -186,6 +186,22 @@
     }
 }
 
+.protocolo{
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    @include media (md){
+        width: 70%;
+    }
+
+}
+
+.texto__protocolo{
+    color: $amarillo;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
 /* Contacto MBF */
 
 .centro {

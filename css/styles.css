@@ -268,6 +268,19 @@ li .enlace--menu {
     font-size: 2rem;
     color: #C4357E; }
 
+.protocolo {
+  width: 100% !important;
+  display: flex;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    .protocolo {
+      width: 70%; } }
+
+.texto__protocolo {
+  color: #F8CF57;
+  font-weight: bold;
+  font-size: 2rem; }
+
 /* Contacto MBF */
 .centro {
   display: flex;
