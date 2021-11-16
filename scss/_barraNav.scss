@@ -1,39 +1,34 @@
 /* Barra de navegacion */
 
-header{
+.header{
     background: linear-gradient(90deg, rgba(196,53,126,0.5) 0%, rgba(238,145,188,0.5) 100%);
 }
 
 .navbar{
     background: linear-gradient(90deg, rgba(196,53,126,0.5) 0%, rgba(238,145,188,0.5) 100%) !important;
+}
 
-&__logo{
-    font-size: 1.8rem;
-    margin-left: 1rem;
-    color: $amarillo !important;
-    img{
-        margin-right: 2rem;
-        }
-    }
+.navbar__logo{
+    margin: 0 1rem 0 1rem;
 }
 
 .enlace {
     font-family: $fuenteHead;
     font-weight: bold;
-}
-
-.enlace--transicion{
+    font-size: 1.5rem;
+    color: $amarillo;
     transition: color .3s ease !important;
+    text-decoration: none;
 }
 
-.enlace--transicion:hover{
+.enlace:hover{
     color: $blanco !important;
 }
 
-//Extend
 li{
     .enlace--menu{
-        @extend .enlace;
+        font-family: $fuenteHead;
+        font-weight: bold;
         font-size: 2rem;
         margin-right: 2rem;
         transition: color .3s;
