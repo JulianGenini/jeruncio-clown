@@ -34,12 +34,8 @@
 // Fondo tecnica
 
 .fondo--tecnica{
-    background-image: url(../img/fondos/tecnicamobile.webp);
+    background-image: url(../img/fondos/tecnica.jpg);
 
-
-    @include media(sm){
-        background-image: url(../img/fondos/tecnica.webp);
-    }
 }
 
 // Fondo contacto
