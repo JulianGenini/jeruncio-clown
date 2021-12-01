@@ -157,6 +157,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .tecnica__tarjeta:last-of-type{
@@ -168,6 +169,12 @@
     font-size: 4rem;
     color: $amarillo;
     font-weight: bold;
+}
+
+.tecnica__tarjeta__contenedor{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 .contenedorTecnica{
