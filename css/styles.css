@@ -43,6 +43,11 @@ h6 {
   color: #F8CF57 !important;
   font-size: 1.3rem; }
 
+.negrita {
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem; }
+
 /* Fondo */
 .fondo {
   background-size: cover;
