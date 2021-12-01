@@ -30,6 +30,19 @@ h5 {
 h6 {
   font-size: 1.16667rem; }
 
+/* Estilos placeholder*/
+::-webkit-input-placeholder {
+  color: #F8CF57 !important;
+  font-size: 1.3rem; }
+
+::-moz-placeholder {
+  color: #F8CF57 !important;
+  font-size: 1.3rem; }
+
+:-ms-input-placeholder {
+  color: #F8CF57 !important;
+  font-size: 1.3rem; }
+
 /* Fondo */
 .fondo {
   background-size: cover;
@@ -40,16 +53,19 @@ h6 {
 
 /* Imagenes fondo */
 .fondo--inicio {
-  background-image: url(../img/fondos/portadamobile.webp); }
+  background-image: url(../img/fondos/iniciomobile.jpg); }
   @media (min-width: 768px) {
     .fondo--inicio {
-      background-image: url(../img/fondos/portada.webp); } }
+      background-image: url(../img/fondos/inicio.jpg); } }
 
 .fondo--bio {
   background-image: url(../img/fondos/biomobile.webp); }
   @media (min-width: 480px) {
     .fondo--bio {
       background-image: url(../img/fondos/bio.webp); } }
+
+.fondo--media {
+  background-image: url(../img/fondos/media.jpg); }
 
 .fondo--tecnica {
   background-image: url(../img/fondos/tecnica.jpg); }
@@ -70,6 +86,14 @@ h6 {
 .navbar__logo {
   margin: 0 1rem 0 1rem; }
 
+.navbar-nav li {
+  display: flex;
+  justify-content: center; }
+
+.navbar-toggler-icon {
+  width: 2rem;
+  height: 2rem; }
+
 .enlace {
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
@@ -79,7 +103,7 @@ h6 {
   text-decoration: none; }
 
 .enlace:hover {
-  color: #dddddd !important; }
+  color: #e7e7e7 !important; }
 
 li .enlace--menu {
   font-family: "PT Sans", sans-serif;
@@ -87,7 +111,7 @@ li .enlace--menu {
   font-size: 2rem;
   margin-right: 2rem;
   transition: color .3s;
-  color: #dddddd !important; }
+  color: #e7e7e7 !important; }
 
 .enlace--menu:hover {
   color: #F8CF57 !important; }
@@ -320,7 +344,7 @@ input {
   font-family: "PT Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #dddddd;
+  color: #e7e7e7;
   padding: 1rem;
   transition: color .3s ease; }
 
@@ -350,7 +374,7 @@ input {
 
 .textoContacto {
   text-align: center;
-  color: #dddddd;
+  color: #e7e7e7;
   font-family: "Antic Slab", serif;
   font-weight: bold;
   font-size: 1.5rem; }
@@ -365,6 +389,10 @@ input {
 @media (min-width: 480px) {
   .form {
     width: 70%; } }
+
+.form-control {
+  background-color: rgba(238, 145, 188, 0.5);
+  border: 2px solid #F8CF57; }
 
 @media (min-width: 768px) {
   .form, .contacto {

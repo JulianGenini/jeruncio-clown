@@ -37,3 +37,18 @@ $breakpoints: (
         font-size: 7rem/$tamanioHead;
     }   
 }
+
+/* Estilos placeholder*/
+
+::-webkit-input-placeholder {
+    color: $amarillo !important;
+    font-size: 1.3rem;
+    }
+    ::-moz-placeholder {
+        color: $amarillo !important;
+        font-size: 1.3rem;
+    }
+    :-ms-input-placeholder {
+        color: $amarillo !important;
+        font-size: 1.3rem;
+    }

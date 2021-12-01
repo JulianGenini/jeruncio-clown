@@ -12,6 +12,16 @@
     margin: 0 1rem 0 1rem;
 }
 
+.navbar-nav li {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-toggler-icon{
+    width: 2rem;
+    height: 2rem;
+}
+
 .enlace {
     font-family: $fuenteHead;
     font-weight: bold;

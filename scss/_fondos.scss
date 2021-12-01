@@ -13,10 +13,10 @@
 // Fondo inicio
 
 .fondo--inicio{
-    background-image: url(../img/fondos/portadamobile.webp);
+    background-image: url(../img/fondos/iniciomobile.jpg);
 
     @include media(md){
-        background-image: url(../img/fondos/portada.webp);
+        background-image: url(../img/fondos/inicio.jpg);
     }
 }
 
@@ -29,6 +29,12 @@
     @include media(sm){
         background-image: url(../img/fondos/bio.webp);
     }
+}
+
+// Fondo media
+
+.fondo--media{
+    background-image: url(../img/fondos/media.jpg);
 }
 
 // Fondo tecnica

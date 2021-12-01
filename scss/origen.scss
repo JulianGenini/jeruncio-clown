@@ -1,6 +1,6 @@
+@import "variables";
 @import "globales";
 @import "fondos";
-@import "variables";
 @import "barraNav";
 @import "footer";
 
@@ -142,7 +142,6 @@
         }
     }
 }
-
 
 /* Técnica MBF */
 
@@ -308,9 +307,16 @@ input {
     }
 }
 
+.form-control{
+    background-color: $rosatransp;
+    border: 2px solid $amarillo;
+
+}
+
 .form, .contacto{
     @include media (md){
         width: 50%;
     }
 }
 
+    
