@@ -129,17 +129,6 @@
     font-weight: bold;
 }
 
-.tecnica__tarjeta__contenedor{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-
-.contenedorTecnica{
-    text-align: center;
-    margin: 1rem;
-}
-
 .subsTecnica{
     font-size: 2rem;
     font-weight: 700;
@@ -150,19 +139,6 @@
     font-weight: normal;
 }
 
-.alert{
-    border-radius: 10px;
-    margin: 0 1rem 1rem 1rem;
-    border: 2px solid $rosaosc;
-
-    p{
-        font-family: $fuenteHead2;
-        font-weight: bold;
-        font-size: 2rem;
-        color: $rosaosc;
-    }
-}
-
 .protocolo{
     width: 100% !important;
     display: flex;
@@ -170,7 +146,6 @@
     @include media (md){
         width: 70%;
     }
-
 }
 
 .texto__protocolo{
@@ -178,6 +153,8 @@
     font-weight: bold;
     font-size: 2rem;
 }
+
+
 
 /* Contacto MBF */
 
