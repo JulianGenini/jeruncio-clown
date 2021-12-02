@@ -99,8 +99,6 @@
     }
 }
 
-// -----OK------
-
 /* Técnica MBF */
 
 .tecnica{
@@ -148,13 +146,17 @@
     }
 }
 
-.texto__protocolo{
-    color: $amarillo;
-    font-weight: bold;
+.protocolo__contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.protocolo__texto{
     font-size: 2rem;
 }
 
-
+// -----OK------
 
 /* Contacto MBF */
 

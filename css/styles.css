@@ -289,9 +289,12 @@ li .enlace--menu {
     .protocolo {
       width: 70%; } }
 
-.texto__protocolo {
-  color: #F8CF57;
-  font-weight: bold;
+.protocolo__contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.protocolo__texto {
   font-size: 2rem; }
 
 /* Contacto MBF */
