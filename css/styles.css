@@ -282,7 +282,7 @@ li .enlace--menu {
   font-weight: normal; }
 
 .protocolo {
-  width: 100% !important;
+  width: 92% !important;
   display: flex;
   justify-content: center; }
   @media (min-width: 768px) {
