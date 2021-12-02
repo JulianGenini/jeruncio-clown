@@ -38,6 +38,43 @@ $breakpoints: (
     }   
 }
 
+//Titulo
+
+.titulo{
+    font-family: $fuenteHead;
+    font-weight: bold;
+    color: $rosaosc;
+    border: $bordeRosa;
+    border-radius: $radius;
+    background-color: $amarillotransp;
+    padding: 1rem;
+}
+
+
+.negrita{
+    font-family: $fuenteHead;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+//Tarjetas
+
+.tarjetas{
+    background-color: $rosatransp;
+    border: $bordeAmarillo;
+    border-radius: $radius;
+    padding: 1rem;
+}
+
+.tarjetas--texto{
+
+    font-size: 1.5rem;
+    line-height: 1.2;
+    @include media (md){
+        font-size: 2rem;
+    }
+}
+
 /* Estilos placeholder*/
 
 ::-webkit-input-placeholder {
@@ -52,9 +89,3 @@ $breakpoints: (
         color: $amarillo !important;
         font-size: 1.3rem;
     }
-
-.negrita{
-    font-family: $fuenteHead;
-    font-weight: bold;
-    font-size: 2.5rem;
-}

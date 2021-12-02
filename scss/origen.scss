@@ -4,32 +4,14 @@
 @import "barraNav";
 @import "footer";
 
-/* Se reutiliza */
-
-.negrita{
-    font-family: $fuenteHead;
-    font-weight: bold;
-    font-size: 2.5rem;
-}
-
 /* Index MBF */
 
-.titulo{
-    font-family: $fuenteHead;
-    font-weight: bold;
-    color: $rosaosc;
-    border: 2px solid $rosaosc;
-    border-radius: 10px;
-    background-color: $amarillotransp;
-    padding: 1rem;
-}
-
-.main--tarjetas{
+.inicio{
     display: flex;
     flex-direction: column;
 }
 
-.contenedor--tarjetas{
+.inicio__tarjetas{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -39,34 +21,17 @@
     @include media (md){
         width: 60%;
         align-self: flex-end;
-
     }
 }
 
-.tarjetas{
-    background-color: $rosatransp;
-    border: 2px solid #F8CF57;
-    border-radius: 10px;
-    padding: 1rem;
-}
-
-.tarjetas--textindex{
-
-    font-size: 1.5rem;
-    line-height: 1.2;
-    @include media (md){
-        font-size: 2rem;
-    }
-}
-
-.main--funciones{
+.inicio__funciones{
    display: flex;
    flex-direction: column;
    align-items: center;
    background-color: $rosatransp;
    padding: 1rem;
-   border: 2px solid #F8CF57;
-    border-radius: 10px;
+   border: $bordeAmarillo;
+    border-radius: $radius;
 }
 
 .ubicacion{
@@ -75,15 +40,15 @@
 
 /* Bio MBF */
 
-.tarjeta--bio{
+.tarjetas--bio{
     @include media (sm){
         width: 50%;
     }
 }
 
 .habilidades__contenedor{
-    border: 2px solid #F8CF57;
-    border-radius: 10px;
+    border: $bordeAmarillo;
+    border-radius: $radius;
     background-color: $rosatransp;
     padding: 1rem;
     display: flex;
@@ -94,7 +59,6 @@
 
 .habilidades__contenedor:hover{
     background-color: $rosaosc;
-
 }
 
 .habilidades__img{
@@ -110,22 +74,14 @@
 
 /* Media MBF */
 
-.media{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-}
-
 .carousel{
-    border: 2px solid #F8CF57;
-    border-radius: 10px;
+    border: $bordeAmarillo;
+    border-radius: $radius;
     background-color: $rosatransp;
     padding: 2rem;
 
     @include media (md){
-        width: 60vw;
+        width: 70vw;
     }
 }
 
@@ -135,13 +91,15 @@
         font-size: 2rem;
         color: black;
         background-color: $amarillotransp;
-        border-radius: 10px;
+        border-radius: $radius;
 
         @include media (sm){
             font-size: 2.5rem;
         }
     }
 }
+
+// -----OK------
 
 /* Técnica MBF */
 
@@ -316,7 +274,8 @@ input {
 
 .form-control{
     background-color: $rosatransp;
-    border: 2px solid $amarillo;
+    border: $bordeAmarillo;
+    border-radius: 4px;
 
 }
 
