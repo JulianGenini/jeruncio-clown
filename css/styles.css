@@ -103,10 +103,7 @@ h6 {
 
 /* Barra de navegacion */
 .header {
-  background: linear-gradient(90deg, rgba(196, 53, 126, 0.5) 0%, rgba(238, 145, 188, 0.5) 100%); }
-
-.navbar {
-  background: linear-gradient(90deg, rgba(196, 53, 126, 0.5) 0%, rgba(238, 145, 188, 0.5) 100%) !important; }
+  background: linear-gradient(90deg, #ee91bc 0%, #c4357e 100%); }
 
 .navbar__logo {
   margin: 0 1rem 0 1rem; }
@@ -119,8 +116,8 @@ h6 {
   border: 0; }
 
 .navbar-toggler-icon {
-  width: 2rem;
-  height: 2rem; }
+  width: 3rem;
+  height: 3rem; }
 
 .enlace {
   font-family: "PT Sans", sans-serif;
@@ -306,9 +303,13 @@ li .enlace--menu {
 .form {
   width: 90%; }
   .form label {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "PT Sans", sans-serif;
-    color: #F8CF57; }
+    font-weight: bold;
+    background-color: #C4357E;
+    border: 2px solid #F8CF57;
+    border-radius: 5px;
+    padding: 1rem; }
   .form textarea {
     width: 100%;
     background-color: rgba(238, 145, 188, 0.5);
@@ -328,32 +329,25 @@ input {
   font-weight: bold;
   color: #e7e7e7;
   padding: 1rem;
-  transition: color .3s ease; }
+  transition: background-color color .5s ease; }
 
 .boton:hover {
-  color: #F8CF57; }
+  color: #C4357E;
+  background-color: #F8CF57; }
 
 .contacto__medios {
-  display: flex;
   text-align: center;
-  gap: 5rem;
-  margin-top: 2rem;
-  height: 70%;
-  width: 95%; }
+  margin-top: 2rem; }
   @media (min-width: 480px) {
     .contacto__medios {
       flex-direction: column;
-      width: 70%; } }
+      width: 50%; } }
 
 .medios {
   background-color: rgba(238, 145, 188, 0.5);
   border-radius: 5px;
   border: 2px solid #F8CF57;
-  padding: 0.5rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  padding: 0.5rem; }
 
 .textoContacto {
   text-align: center;
@@ -369,15 +363,23 @@ input {
   color: #F8CF57;
   margin: 1rem; }
 
-@media (min-width: 480px) {
-  .form {
-    width: 70%; } }
+.form {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 480px) {
+    .form {
+      width: 50%; } }
 
 .form-control {
   background-color: rgba(238, 145, 188, 0.5);
   border: 2px solid #F8CF57;
-  border-radius: 4px; }
+  border-radius: 4px;
+  padding: 1.2rem; }
 
-@media (min-width: 768px) {
-  .form, .contacto {
-    width: 50%; } }
+.contacto__container {
+  display: flex;
+  flex-direction: column; }
+
+.consulta {
+  width: 80%;
+  padding: 3rem; }
