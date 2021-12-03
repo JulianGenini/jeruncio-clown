@@ -138,7 +138,7 @@
 }
 
 .protocolo{
-    width: 92% !important;
+    width: 95vw !important;
     display: flex;
     justify-content: center;
     @include media (md){
@@ -160,12 +160,12 @@
 
 /* Contacto MBF */
 
-.centro {
+.contacto__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
 }
+
 .form{
     width: 90%;
     
@@ -205,7 +205,7 @@ input {
     color: $amarillo;
 }
 
-.contacto {
+.contacto__medios {
     display: flex;
     text-align: center;
     gap: 5rem;
@@ -215,15 +215,16 @@ input {
 
     @include media (sm){
         flex-direction: column;
+        width: 70%;
     }
 }
 
-.contenedorContacto{
-    background-color: rgba(238,145,188,0.5);
+.medios{
+    background-color: $rosatransp;
     border-radius: 5px;
-    border: 2px solid $amarillo;
+    border: $bordeAmarillo;
     padding: 0.5rem;
-    height: 25vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
